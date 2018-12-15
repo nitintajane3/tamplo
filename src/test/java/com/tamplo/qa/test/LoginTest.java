@@ -25,7 +25,7 @@ public class LoginTest extends TestBase
 	LoginPage loginPage ;
 	HomePage homePage;
 	String sheetname = "Sheet1";
-	TestListener testlistener;
+	
 
 	public LoginTest() throws IOException 
 	{
@@ -55,11 +55,10 @@ public class LoginTest extends TestBase
 	{
 		
 		
-		ExtentManager.logger = ExtentManager.extent.createTest("Login test");
+		
 		 loginPage.login(username,passwrod);
 		System.out.println(username   +   passwrod);
-		ExtentManager.logger.log(Status.PASS, MarkupHelper.createLabel("check test for " + username, ExtentColor.GREEN));
-		ExtentManager.logger.log(Status.PASS, MarkupHelper.createLabel("User login  successfully", ExtentColor.GREEN));
+		
 		
 	}
 	
