@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="tamplo test" verbose="1" >
+  <listeners>
+        <listener class-name="com.tamplo.qa.utils.TestListener" />
+    </listeners>
+  <test name="tamplo5 test" >
+    <classes>
+    <class name="com.tamplo.qa.test.LoginTest"></class>
+     <class name="com.tamplo.qa.test.HomePageTest"></class>
+    </classes>
+ </test>
+</suite>

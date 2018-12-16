@@ -33,18 +33,18 @@ public class HomePageTest extends TestBase
 	public void setUp() throws IOException
 	{
 		
-		NewExtendReport.newReport("Login test","logintoapplication");
+		/*NewExtendReport.newReport("Login test","logintoapplication");
 		
-		NewExtendReport.logger =  NewExtendReport.extent.createTest("Login Test ");
+		NewExtendReport.logger =  NewExtendReport.extent.createTest("Login Test ");*/
 		initialization();
 		
 		loginPage = new LoginPage();
 		
 		loginPage.login(prob.getProperty("username"), prob.getProperty("password"));
 		
-		NewExtendReport.logger.log(Status.PASS, MarkupHelper.createLabel("User login  successfully", ExtentColor.GREEN));
+		/*NewExtendReport.logger.log(Status.PASS, MarkupHelper.createLabel("User login  successfully", ExtentColor.GREEN));
 		
-		NewExtendReport.extent.flush();
+		NewExtendReport.extent.flush();*/
 	
 	}
 	
@@ -54,7 +54,7 @@ public class HomePageTest extends TestBase
 	public void verifyDpartmentPage() throws IOException
 	{
 		
-		NewExtendReport.logger2 =  NewExtendReport.extent.createTest("Remove Project Test");
+		/*NewExtendReport.logger2 =  NewExtendReport.extent.createTest("Remove Project Test");*/
 		
 		homePage = new HomePage();
 		
@@ -64,9 +64,9 @@ public class HomePageTest extends TestBase
 		
 		Assert.assertEquals(dprtmentpage, "DEPARTMENTS","Department page not found");
 		
-		NewExtendReport.logger2.log(Status.PASS, MarkupHelper.createLabel("Department verify successfully", ExtentColor.GREEN));
+		/*NewExtendReport.logger2.log(Status.PASS, MarkupHelper.createLabel("Department verify successfully", ExtentColor.GREEN));
 	
-		NewExtendReport.extent.flush();
+		NewExtendReport.extent.flush();*/
 		
 	}
 	
