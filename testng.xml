@@ -3,6 +3,7 @@
 <suite name="tamplo test" verbose="1" >
   <listeners>
         <listener class-name="com.tamplo.qa.utils.TestListener" />
+        <listener class-name="com.tamplo.qa.utils.RetryListener" />
     </listeners>
   <test name="tamplo5 test" >
     <classes>

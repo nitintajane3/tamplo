@@ -1,31 +1,216 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="2" failed="1" ignored="0" total="6" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="tamplo test" duration-ms="92464" started-at="2018-12-16T06:53:32Z" finished-at="2018-12-16T06:55:04Z">
+  <suite name="tamplo test" duration-ms="87432" started-at="2019-01-14T10:43:18Z" finished-at="2019-01-14T10:44:45Z">
     <groups>
     </groups>
-    <test name="tamplo5 test" duration-ms="92464" started-at="2018-12-16T06:53:32Z" finished-at="2018-12-16T06:55:04Z">
+    <test name="tamplo5 test" duration-ms="87432" started-at="2019-01-14T10:43:18Z" finished-at="2019-01-14T10:44:45Z">
       <class name="com.tamplo.qa.test.HomePageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tamplo.qa.test.HomePageTest@1e88b3c]" name="setUp" is-config="true" duration-ms="16599" started-at="2018-12-16T12:24:28Z" finished-at="2018-12-16T12:24:44Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tamplo.qa.test.HomePageTest@1e88b3c]" name="setUp" is-config="true" duration-ms="7299" started-at="2019-01-14T16:13:43Z" finished-at="2019-01-14T16:13:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyDpartmentPage()[pri:0, instance:com.tamplo.qa.test.HomePageTest@1e88b3c]" name="verifyDpartmentPage" duration-ms="18780" started-at="2018-12-16T12:24:44Z" finished-at="2018-12-16T12:25:03Z">
+        <test-method status="SKIP" signature="verifyDpartmentPage()[pri:0, instance:com.tamplo.qa.test.HomePageTest@1e88b3c]" name="verifyDpartmentPage" duration-ms="10628" started-at="2019-01-14T16:13:50Z" finished-at="2019-01-14T16:14:01Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Department page not found expected [DEPARTMENTSs] but found [DEPARTMENTS]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Department page not found expected [DEPARTMENTSs] but found [DEPARTMENTS]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:189)
+	at com.tamplo.qa.test.HomePageTest.verifyDpartmentPage(HomePageTest.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDpartmentPage -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tamplo.qa.test.HomePageTest@1e88b3c]" name="tearDown" is-config="true" duration-ms="771" started-at="2018-12-16T12:25:03Z" finished-at="2018-12-16T12:25:04Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tamplo.qa.test.HomePageTest@1e88b3c]" name="tearDown" is-config="true" duration-ms="602" started-at="2019-01-14T16:14:01Z" finished-at="2019-01-14T16:14:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tamplo.qa.test.HomePageTest@1e88b3c]" name="setUp" is-config="true" duration-ms="7480" started-at="2019-01-14T16:14:01Z" finished-at="2019-01-14T16:14:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="verifyDpartmentPage()[pri:0, instance:com.tamplo.qa.test.HomePageTest@1e88b3c]" name="verifyDpartmentPage" duration-ms="17204" started-at="2019-01-14T16:14:09Z" finished-at="2019-01-14T16:14:26Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Department page not found expected [DEPARTMENTSs] but found [DEPARTMENTS]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Department page not found expected [DEPARTMENTSs] but found [DEPARTMENTS]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:189)
+	at com.tamplo.qa.test.HomePageTest.verifyDpartmentPage(HomePageTest.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:1014)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1215)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDpartmentPage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tamplo.qa.test.HomePageTest@1e88b3c]" name="tearDown" is-config="true" duration-ms="582" started-at="2019-01-14T16:14:26Z" finished-at="2019-01-14T16:14:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tamplo.qa.test.HomePageTest@1e88b3c]" name="setUp" is-config="true" duration-ms="7523" started-at="2019-01-14T16:14:27Z" finished-at="2019-01-14T16:14:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="verifyDpartmentPage()[pri:0, instance:com.tamplo.qa.test.HomePageTest@1e88b3c]" name="verifyDpartmentPage" duration-ms="10384" started-at="2019-01-14T16:14:34Z" finished-at="2019-01-14T16:14:44Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//li[@class='ng-scope']//a[@class='ng-binding'][contains(text(),'DEPARTMENTS')]"}
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'ADMIN-PC', ip: '192.168.1.5', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\Admin\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:64652}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 0952901bb8b352405a4fc3a8f512c6ef
+*** Element info: {Using=xpath, value=//li[@class='ng-scope']//a[@class='ng-binding'][contains(text(),'DEPARTMENTS')]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//li[@class='ng-scope']//a[@class='ng-binding'][contains(text(),'DEPARTMENTS')]"}
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'ADMIN-PC', ip: '192.168.1.5', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\Admin\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:64652}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 0952901bb8b352405a4fc3a8f512c6ef
+*** Element info: {Using=xpath, value=//li[@class='ng-scope']//a[@class='ng-binding'][contains(text(),'DEPARTMENTS')]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+	at sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:109)
+	at com.sun.proxy.$Proxy9.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:193)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy13.click(Unknown Source)
+	at com.tamplo.qa.pages.HomePage.clickOnDprtmentlink(HomePage.java:68)
+	at com.tamplo.qa.test.HomePageTest.verifyDpartmentPage(HomePageTest.java:59)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:1014)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1215)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDpartmentPage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tamplo.qa.test.HomePageTest@1e88b3c]" name="tearDown" is-config="true" duration-ms="598" started-at="2019-01-14T16:14:44Z" finished-at="2019-01-14T16:14:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.tamplo.qa.test.HomePageTest -->
       <class name="com.tamplo.qa.test.LoginTest">
-        <test-method status="PASS" signature="initialiseBrowser()[pri:0, instance:com.tamplo.qa.test.LoginTest@77caeb3e]" name="initialiseBrowser" is-config="true" duration-ms="11149" started-at="2018-12-16T12:23:33Z" finished-at="2018-12-16T12:23:44Z">
+        <test-method status="PASS" signature="initialiseBrowser()[pri:0, instance:com.tamplo.qa.test.LoginTest@77caeb3e]" name="initialiseBrowser" is-config="true" duration-ms="7796" started-at="2019-01-14T16:13:18Z" finished-at="2019-01-14T16:13:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialiseBrowser -->
-        <test-method status="PASS" signature="loginTestCases(java.lang.String, java.lang.String, org.testng.ITestResult)[pri:0, instance:com.tamplo.qa.test.LoginTest@77caeb3e]" name="loginTestCases" duration-ms="1327" started-at="2018-12-16T12:23:44Z" data-provider="getDataExcel" finished-at="2018-12-16T12:23:45Z">
+        <test-method status="PASS" signature="loginTestCases(java.lang.String, java.lang.String, org.testng.ITestResult)[pri:0, instance:com.tamplo.qa.test.LoginTest@77caeb3e]" name="loginTestCases" duration-ms="587" started-at="2019-01-14T16:13:26Z" data-provider="getDataExcel" finished-at="2019-01-14T16:13:26Z">
           <params>
             <param index="0">
               <value>
@@ -44,15 +229,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTestCases -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tamplo.qa.test.LoginTest@77caeb3e]" name="tearDown" is-config="true" duration-ms="877" started-at="2018-12-16T12:23:45Z" finished-at="2018-12-16T12:23:46Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tamplo.qa.test.LoginTest@77caeb3e]" name="tearDown" is-config="true" duration-ms="582" started-at="2019-01-14T16:13:26Z" finished-at="2019-01-14T16:13:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="initialiseBrowser()[pri:0, instance:com.tamplo.qa.test.LoginTest@77caeb3e]" name="initialiseBrowser" is-config="true" duration-ms="23436" started-at="2018-12-16T12:23:46Z" finished-at="2018-12-16T12:24:09Z">
+        <test-method status="PASS" signature="initialiseBrowser()[pri:0, instance:com.tamplo.qa.test.LoginTest@77caeb3e]" name="initialiseBrowser" is-config="true" duration-ms="6704" started-at="2019-01-14T16:13:27Z" finished-at="2019-01-14T16:13:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialiseBrowser -->
-        <test-method status="PASS" signature="loginTestCases(java.lang.String, java.lang.String, org.testng.ITestResult)[pri:0, instance:com.tamplo.qa.test.LoginTest@77caeb3e]" name="loginTestCases" duration-ms="1066" started-at="2018-12-16T12:24:09Z" data-provider="getDataExcel" finished-at="2018-12-16T12:24:10Z">
+        <test-method status="PASS" signature="loginTestCases(java.lang.String, java.lang.String, org.testng.ITestResult)[pri:0, instance:com.tamplo.qa.test.LoginTest@77caeb3e]" name="loginTestCases" duration-ms="536" started-at="2019-01-14T16:13:34Z" data-provider="getDataExcel" finished-at="2019-01-14T16:13:34Z">
           <params>
             <param index="0">
               <value>
@@ -71,15 +256,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTestCases -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tamplo.qa.test.LoginTest@77caeb3e]" name="tearDown" is-config="true" duration-ms="606" started-at="2018-12-16T12:24:10Z" finished-at="2018-12-16T12:24:11Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tamplo.qa.test.LoginTest@77caeb3e]" name="tearDown" is-config="true" duration-ms="577" started-at="2019-01-14T16:13:34Z" finished-at="2019-01-14T16:13:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="initialiseBrowser()[pri:0, instance:com.tamplo.qa.test.LoginTest@77caeb3e]" name="initialiseBrowser" is-config="true" duration-ms="15006" started-at="2018-12-16T12:24:11Z" finished-at="2018-12-16T12:24:26Z">
+        <test-method status="PASS" signature="initialiseBrowser()[pri:0, instance:com.tamplo.qa.test.LoginTest@77caeb3e]" name="initialiseBrowser" is-config="true" duration-ms="6815" started-at="2019-01-14T16:13:35Z" finished-at="2019-01-14T16:13:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialiseBrowser -->
-        <test-method status="PASS" signature="loginTestCases(java.lang.String, java.lang.String, org.testng.ITestResult)[pri:0, instance:com.tamplo.qa.test.LoginTest@77caeb3e]" name="loginTestCases" duration-ms="1036" started-at="2018-12-16T12:24:26Z" data-provider="getDataExcel" finished-at="2018-12-16T12:24:27Z">
+        <test-method status="PASS" signature="loginTestCases(java.lang.String, java.lang.String, org.testng.ITestResult)[pri:0, instance:com.tamplo.qa.test.LoginTest@77caeb3e]" name="loginTestCases" duration-ms="487" started-at="2019-01-14T16:13:42Z" data-provider="getDataExcel" finished-at="2019-01-14T16:13:42Z">
           <params>
             <param index="0">
               <value>
@@ -98,7 +283,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTestCases -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tamplo.qa.test.LoginTest@77caeb3e]" name="tearDown" is-config="true" duration-ms="829" started-at="2018-12-16T12:24:27Z" finished-at="2018-12-16T12:24:28Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tamplo.qa.test.LoginTest@77caeb3e]" name="tearDown" is-config="true" duration-ms="579" started-at="2019-01-14T16:13:42Z" finished-at="2019-01-14T16:13:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

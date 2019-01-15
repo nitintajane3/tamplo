@@ -9,13 +9,10 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import com.aventstack.extentreports.Status;
-import com.aventstack.extentreports.markuputils.ExtentColor;
-import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.tamplo.qa.pages.HomePage;
 import com.tamplo.qa.pages.LoginPage;
 import com.tamplo.qa.testbase.TestBase;
-import com.tamplo.qa.utils.ExtentManager;
+
 import com.tamplo.qa.utils.TestListener;
 import com.tamplo.qa.utils.TestUtils;
 

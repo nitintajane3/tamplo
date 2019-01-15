@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [tamplo test]">
+  <listeners>
+    <listener class-name="com.tamplo.qa.utils.TestListener"/>
+    <listener class-name="com.tamplo.qa.utils.RetryListener"/>
+  </listeners>
+  <test name="tamplo5 test(failed)">
     <classes>
-      <class name="com.tamplo.qa.test.LoginTest">
+      <class name="com.tamplo.qa.test.HomePageTest">
         <methods>
-          <include name="loginTestCases"/>
+          <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="initialiseBrowser"/>
+          <include name="verifyDpartmentPage"/>
         </methods>
-      </class> <!-- com.tamplo.qa.test.LoginTest -->
+      </class> <!-- com.tamplo.qa.test.HomePageTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- tamplo5 test(failed) -->
+</suite> <!-- Failed suite [tamplo test] -->

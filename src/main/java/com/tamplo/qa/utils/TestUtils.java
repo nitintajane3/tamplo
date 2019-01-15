@@ -24,7 +24,8 @@ import com.tamplo.qa.testbase.TestBase;
 
 public class TestUtils extends TestBase
 {
-	public TestUtils() throws IOException {
+	public TestUtils() throws IOException 
+	{
 		super();
 		// TODO Auto-generated constructor stub
 	}
