@@ -52,7 +52,8 @@ public class ExtentManager
     }
      
     //Create the report path
-    private static String getReportPath (String path) {
+    private static String getReportPath (String path) 
+    {
     	File testDirectory = new File(path);
         if (!testDirectory.exists()) 
         {

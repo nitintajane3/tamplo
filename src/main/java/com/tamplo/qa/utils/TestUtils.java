@@ -83,7 +83,8 @@ public class TestUtils extends TestBase
 		return data;
 	}
 	
-	public static void takeScreenshotAtEndOfTest() throws IOException {
+	public static void takeScreenshotAtEndOfTest() throws IOException 
+	{
 		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		String currentDir = System.getProperty("user.dir");
 		String DateStr = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss").format(new Date());

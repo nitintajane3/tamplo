@@ -2,6 +2,7 @@ package com.tamplo.qa.test;
 
 import java.io.IOException;
 
+import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -49,18 +50,34 @@ public class HomePageTest extends TestBase
 	
 	
 	@Test
-	public void verifyDpartmentPage() throws IOException
+	public void verifyDpartmentPage() throws IOException, InterruptedException
 	{
 		
 		/*NewExtendReport.logger2 =  NewExtendReport.extent.createTest("Remove Project Test");*/
 		
-		homePage = new HomePage();
+		/*homePage = new HomePage();
 		
-	    homePage.clickOnDprtmentlink();
+	    homePage.clickOnDprtmentlink();*/
+	    
+	    driver.findElement(By.xpath("html/body/div[1]/div[1]/header/div/div[3]/nav/ul/li[6]/a")).click();
+	    
+	    driver.findElement(By.xpath("//div[@class='allItemWidget ng-scope']/div[2]/header/h3/a")).click();
+	    
+	    driver.findElement(By.xpath("//div[@class='ng-scope']/header/div[3]/ul/li[3]/a")).click();
+	    
+	    driver.findElement(By.xpath("//div[@class='zeroStateContainer']/p/a")).click();
+	    		
+	    driver.findElement(By.xpath("//section[@class='tamplo-messageDialogContentSection']/form/div/label/strong")).click();
+	    
+	    
+	    Thread.sleep(1000);
+	    
+	    
+	    Runtime.getRuntime().exec("D:\\autoit\\FileUpload.exe");
+	    
+		/*String dprtmentpage = homePage.veryfyDprtmentPage();
 		
-		String dprtmentpage = homePage.veryfyDprtmentPage();
-		
-		Assert.assertEquals(dprtmentpage, "DEPARTMENTSs","Department page not found");
+		Assert.assertEquals(dprtmentpage, "DEPARTMENTSs","Department page not found");*/
 		
 		/*NewExtendReport.logger2.log(Status.PASS, MarkupHelper.createLabel("Department verify successfully", ExtentColor.GREEN));
 	
@@ -72,7 +89,7 @@ public class HomePageTest extends TestBase
 	@AfterMethod
 	public void tearDown()
 	{
-		driver.quit();
+		//driver.quit();
 	}
 	
 	

@@ -17,7 +17,7 @@ public class Retry implements IRetryAnalyzer {
             return true;
         }
         return false;
-    }
+}	
     
     public String getResultStatusName(int status) {
     	String resultName = null;
